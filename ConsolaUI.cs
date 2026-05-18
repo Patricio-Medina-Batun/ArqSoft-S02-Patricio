@@ -54,5 +54,17 @@
                             };
             Console.WriteLine(etapas[6 - _motor.IntentosRestantes]);
         }
+
+        public static string PedirCategoria()
+        {
+            Console.Clear();
+            Console.WriteLine("=== CATEGORÍAS ===");
+            Console.WriteLine("1. Arquitectura");
+            Console.WriteLine("2. POO");
+            Console.WriteLine("3. .NET");
+            Console.Write("\nElige una categoría (1, 2 o 3): ");
+
+            return Console.ReadLine();
+        }
     }
 }
